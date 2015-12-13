@@ -34,7 +34,7 @@ def btnEvent(entry):
 #Retorna la imagen que equivale al "numero"
 def getImage(numero, imagenes, nombres):
     for i in range(0,9):
-        if nombres[i] == numero :
+        if nombres[i] == str(numero) :
             return imagenes[i]
     
 def isRightSide(img1, img2): #retorna True si la imagen2 esta a la derecha de la imagen1 
@@ -87,121 +87,121 @@ def CreateImage(number, index, prev, i, array):
     if index == 0 : #la primera imagen
         if number == "1" :
             uno = Image(Point(150, 200), "1.png")
-            array[i] = number
+            array[index] = number
             return uno
         if number == "2" :
             dos = Image(Point(150, 200), "2.png")
-            array[i] = number
+            array[index] = number
             return dos
         if number == "3" :
             tres = Image(Point(150, 200), "3.png")
-            array[i] = number
+            array[index] = number
             return tres
         if number == "4" :
             cuatro = Image(Point(150, 200), "4.png")
-            array[i] = number
+            array[index] = number
             return cuatro
         if number == "5" :
             cinco = Image(Point(150, 200), "5.png")
-            array[i] = number
+            array[index] = number
             return cinco
         if number == "6" :
             seis = Image(Point(150, 200), "6.png")
-            array[i] = number
+            array[index] = number
             return seis
         if number == "7" :
             siete = Image(Point(150, 200), "7.png")
-            array[i] = number
+            array[index] = number
             return siete
         if number == "8" :
             ocho = Image(Point(150, 200), "8.png")
-            array[i] = number
+            array[index] = number
             return ocho
         else : #number == "0" :
             cero = Image(Point(150, 200), "0.png")
-            array[i] = number
+            array[index] = number
             return cero
     
     if index == 1 or index == 2 or index == 4 or index == 5 or index == 7 or index == 8:
         if number == "1" :
             uno = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "1.png")
-            array[i] = number
+            array[index] = number
             return uno
         if number == "2" :
             dos = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "2.png")
-            array[i] = number
+            array[index] = number
             return dos
         if number == "3" :
             tres = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "3.png")
-            array[i] = number
+            array[index] = number
             return tres
         if number == "4" :
             cuatro = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "4.png")
-            array[i] = number
+            array[index] = number
             return cuatro
         if number == "5" :
             cinco = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "5.png")
-            array[i] = number
+            array[index] = number
             return cinco
         if number == "6" :
             seis = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "6.png")
-            array[i] = number
+            array[index] = number
             return seis
         if number == "7" :
             siete = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "7.png")
-            array[i] = number
+            array[index] = number
             return siete
         if number == "8" :
             ocho = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "8.png")
-            array[i] = number
+            array[index] = number
             return ocho
         else : #number == "0" :
             cero = Image(Point((prev.getAnchor().getX()) + 1 + (prev.getWidth()), prev.getAnchor().getY()), "0.png")
-            array[i] = number
+            array[index] = number
             return cero
             
     else : # index = 3 or index = 6
         if number == "1" :
             uno = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "1.png")
-            array[i] = number
+            array[index] = number
             return uno
         if number == "2" :
             dos = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "2.png")
-            array[i] = number
+            array[index] = number
             return dos
         if number == "3" :
             tres = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "3.png")
-            array[i] = number
+            array[index] = number
             return tres
         if number == "4" :
             cuatro = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "4.png")
-            array[i] = number
+            array[index] = number
             return cuatro
         if number == "5" :
             cinco = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "5.png")
-            array[i] = number
+            array[index] = number
             return cinco
         if number == "6" :
             seis = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "6.png")
-            array[i] = number
+            array[index] = number
             return seis
         if number == "7" :
             siete = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "7.png")
-            array[i] = number
+            array[index] = number
             return siete
         if number == "8" :
             ocho = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "8.png")
-            array[i] = number
+            array[index] = number
             return ocho
         else : #number == "0" :
             cero = Image(Point(prev.getAnchor().getX(), (prev.getAnchor().getY()) + 1 + ((prev.getHeight())*i) ), "0.png")
-            array[i] = number
+            array[index] = number
             return cero
 
 def main():
     win = GraphWin('Moving an image', 500, 500)
     #arrayNumbers =  ["1","2","3","4","5","6","7","8","0"]
-    arrayNumbers =  ["1","2","0","3","4","5","6","7","8",]
+    arrayNumbers =  ["1","2","0","3","4","5","6","7","8"]
     Nada = Image(Point(0,0), "9.png")
     arrayImages = [Nada,Nada,Nada,Nada,Nada,Nada,Nada,Nada,Nada]
     arrayNames = ["","","","","","","","",""]
