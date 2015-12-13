@@ -1,0 +1,11 @@
+Instrucciones:
+
+
+    La finalidad del juego es dejar en orden los números
+    del 1 al 8 y en la última posición al caracter especial
+    "#".
+
+    Cada que se ingrese un número se debe clickear en 
+    cualquier parte de la pantalla, para que el programa
+    reciba la entrada. Después de esto se verá o no el 
+    movimiento, dependiendo si es válido o no.

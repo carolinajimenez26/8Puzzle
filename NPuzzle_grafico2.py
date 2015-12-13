@@ -200,7 +200,8 @@ def CreateImage(number, index, prev, i, array):
 
 def main():
     win = GraphWin('Moving an image', 500, 500)
-    #arrayNumbers =  ["1","2","3","4","5","6","7","8","0"]
+    goal =  ["1","2","3","4","5","6","7","8","0"]
+    #arrayNumbers es el tablero que se debe cambiar para enviar
     arrayNumbers =  ["1","2","0","3","4","5","6","7","8"]
     Nada = Image(Point(0,0), "9.png")
     arrayImages = [Nada,Nada,Nada,Nada,Nada,Nada,Nada,Nada,Nada]
